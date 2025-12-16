@@ -1,0 +1,12 @@
+item_name,variant,category,subcategory,description,price,half_plate_price,full_plate_price,small_price,medium_price,large_price,price_display
+Dhaba Pulao - Chicken,,,,,925.0,,,,,,
+Dhaba Pulao - Lamb,,,,,1200.0,,,,,,
+Dhaba Pulao - Prawns,,,,,1300.0,,,,,,
+Margherita Pizza - Small,,,,,,,,100.0,,,
+Margherita Pizza - Medium,,,,,,,,,200.0,,
+Margherita Pizza - Large,,,,,,,,,,300.0,
+Tandoori Chicken - Half,,,,,,19.0,,,,,
+Tandoori Chicken - Full,,,,,,,35.0,,,,
+Tamatar Yakhni,,,,,385.0,,,,,,
+Palak Yakhni,,,,,385.0,,,,,,
+Murgh Yakhni,,,,,465.0,,,,,,
