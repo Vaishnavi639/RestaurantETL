@@ -91,7 +91,7 @@ def _safe_json_load_with_repair(raw: str) -> Dict:
             continue
 
     if salvaged:
-        logger.warning(f"⚠ Salvaged {len(salvaged)} items from partial JSON")
+        logger.warning(f" Salvaged {len(salvaged)} items from partial JSON")
         return {"items": salvaged}
 
     raise ValueError(f"[JSON Parse Error] Could not parse model output.\nSnippet:\n{raw[:500]}")
@@ -190,7 +190,7 @@ class LLMMenuParser:
             except Exception as e:
                 logger.error(f"Attempt {attempt} failed: {e}")
                 if attempt == self.max_retries:
-                    logger.error("❌ All retries failed.")
+                    logger.error(" All retries failed.")
                     return None
                 time.sleep(delay)
                 delay *= 2
