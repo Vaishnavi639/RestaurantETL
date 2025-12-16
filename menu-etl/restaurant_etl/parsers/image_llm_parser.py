@@ -8,11 +8,7 @@ from io import BytesIO
 from dotenv import load_dotenv
 from openai import AzureOpenAI
 
-# --------------------------------------------------
-# ENV + LOGGING
-# --------------------------------------------------
-
-load_dotenv()  # 🔴 REQUIRED — fixes your credential error
+load_dotenv() 
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -129,7 +125,7 @@ class ImageLLMMenuParser:
                 raise ValueError("No JSON object found")
             return json.loads(text[start:end])
         except Exception as e:
-            logger.error("❌ Could not parse JSON from vision output")
+            logger.error(" Could not parse JSON from vision output")
             logger.error(text[:1000])
             return {"items": []}
 
